@@ -1,0 +1,25 @@
+search for laravel jwt on giifle, redirect to github page
+
+lets do manually,
+Goto composer.json in backend project add this to the require
+	=> "tymon/jwt-auth": "^1.0.0-rc.5"
+		goto terminal and update, 
+			=>  composer update
+				php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+				php artisan jwt:secret
+Goto to user.php and auth.php, update it respectively 
+		
+Goto bootstrap.com to add bootstrap in frontend
+=> npm install bootstrap
+	goto style.css input this
+		@import'~bootstrap/dist/css/bootstrap.css';
+		
+	ng g c components/navbar
+	ng g c components/login
+	ng g c components/signup
+	ng g c components/profile
+	ng g c components/password/request-reset
+	ng g c components/password/response-reset
+	
+	app.components.html ==> <app-navbar/>
+							<div class="container"></div>
