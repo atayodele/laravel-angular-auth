@@ -20,6 +20,12 @@ Goto bootstrap.com to add bootstrap in frontend
 	ng g c components/profile
 	ng g c components/password/request-reset
 	ng g c components/password/response-reset
+	ng g s Services/Jarwis
+	ng g s Services/Token
+	ng g s Services/after-login
+	ng g s Services/before-login
 	
 	app.components.html ==> <app-navbar/>
 							<div class="container"></div>
+							
+php artisan make:request SignUpRequest
