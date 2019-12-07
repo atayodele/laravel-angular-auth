@@ -27,6 +27,10 @@ Goto bootstrap.com to add bootstrap in frontend
 	
 	app.components.html ==> <app-navbar/>
 							<div class="container"></div>
+
+SNOTIFTY NOTIFICATION URL							
+https://artemsky.github.io/ng-snotify/documentation/installation.html
 							
 php artisan make:request SignUpRequest
 php artisan make:mail ResetPasswordMail --markdown=Email.passwordReset
+php artisan make:request ChangePasswordRequest
