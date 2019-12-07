@@ -17,4 +17,13 @@ export class JarwisService {
   login(e){
     return this.http.post(`${this.url}/login`, e);
   }
+
+  //PASSWORD RESET
+  sendPasswordResetLink(data){
+    return this.http.post(`${this.url}/sendPasswordResetLink`, data);
+  }
+
+  changePassword(data){
+    return this.http.post(`${this.url}/resetPassword`, data);
+  }
 }

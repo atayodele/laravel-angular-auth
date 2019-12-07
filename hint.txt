@@ -29,3 +29,4 @@ Goto bootstrap.com to add bootstrap in frontend
 							<div class="container"></div>
 							
 php artisan make:request SignUpRequest
+php artisan make:mail ResetPasswordMail --markdown=Email.passwordReset
